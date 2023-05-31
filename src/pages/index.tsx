@@ -14,7 +14,7 @@ export default function Home() {
     const [weather ,setWeather] =useState({})
     const [isLoading, setIsLoading] = useState<boolean>(false)
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=dubai&unitis=imperial&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&unitis=imperial&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
 
     const fetchWeather =(e:any)=>{
          e.preventDefault()
@@ -30,7 +30,8 @@ export default function Home() {
 
   return (
       <>
-    <button onClick={fetchWeather} className="432"> Fetch Weather</button>
+          <input className="text-blue-50" type="text" name="City" onChange={(e) => setCity(e.target.value)} />
+          <button onClick={fetchWeather} className="123"> Fetch Weather</button>
           </>
   )
 }
