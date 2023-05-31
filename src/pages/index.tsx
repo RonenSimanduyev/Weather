@@ -31,7 +31,7 @@ export default function Home() {
   return (
       <>
           <input className="text-blue-50" type="text" name="City" onChange={(e) => setCity(e.target.value)} />
-          <button onClick={fetchWeather}> Fetch Weather</button>
+          <button onClick={fetchWeather} className="123"> Fetch Weather</button>
           </>
   )
 }
