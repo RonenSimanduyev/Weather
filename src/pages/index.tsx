@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
       <>
-    <button onClick={fetchWeather}> Fetch Weather</button>
+    <button onClick={fetchWeather} className="432"> Fetch Weather</button>
           </>
   )
 }
