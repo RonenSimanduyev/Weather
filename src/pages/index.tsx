@@ -52,11 +52,13 @@ export default function Home() {
                 alt="background image"
                 layout="fill"
                 objectFit="contain"
+                className="w-[100vw] lg:w-[600px] lg:h-[100vh]"
             />
-            <div className="relative flex justify-between items-center max-w-[500px] w-full m-auto py-4 text-white z-10">
+
+            <div className="relative flex justify-between items-center sm:w-[100vw] lg:max-w-[500px] w-full m-auto py-4 text-white z-10">
                 <form onSubmit={fetchWeather} className="flex justify-between items-center w-full m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl">
                     <div>
-                        <input className="placeholder-grey bg-transparent w-[450px] focus:outline-none" type="text" placeholder="search city" onChange={(e) => setCity(e.target.value)} />
+                        <input className="placeholder-grey bg-transparent w-[90vw] lg:w-[450px] focus:outline-none" type="text" placeholder="search city" onChange={(e) => setCity(e.target.value)} />
                     </div>
                     <button type="submit"><BsSearch size={20} /></button>
                 </form>

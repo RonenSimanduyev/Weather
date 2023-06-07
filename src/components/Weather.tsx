@@ -22,7 +22,7 @@ interface WeatherComponentProps {
 
 export const Weather = ({ data }: WeatherComponentProps) => {
     return (
-        <div className='relative flex flex-col justify-between max-w-[500px] w-full h-[80vh] m-auto p-4 text-gray-300 z-10'>
+        <div className='relative flex flex-col justify-between lg:max-w-[500px] w-full h-[70vh] lg:h-[80vh] m-auto p-4 text-gray-300 z-10'>
             {/* Top */}
             <div className='relative flex justify-between pt-12'>
                 <div className='flex -mt-7 flex-col items-center'>
