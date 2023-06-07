@@ -65,14 +65,12 @@ export default function Home() {
             {/* Display weather */}
             {isLoading ? (
                 <Spinner />
-            ) : (
-                data && data.main ? (
-                    <div className="m-auto block">
-                        <Weather data={data} />
-                    </div>
-                ) : null
-            )}
+            ) : data && data.main ? (
+                <div className="m-auto block">
+                    <Weather data={data} />
+                </div>
+            ) : null}
         </>
     );
-
 }
+
