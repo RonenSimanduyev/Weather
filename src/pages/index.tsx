@@ -60,7 +60,6 @@ export default function Home() {
                     <div>
                         <input className="placeholder-grey bg-transparent w-[90vw] lg:w-[450px] focus:outline-none" type="text" placeholder="search city" onChange={(e) => setCity(e.target.value)} />
                     </div>
-                    <button type="submit"><BsSearch size={20} /></button>
                 </form>
             </div>
             {/* Display weather */}
