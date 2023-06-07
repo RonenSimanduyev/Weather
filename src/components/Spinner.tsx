@@ -1,9 +1,12 @@
 import React from 'react';
+import { RingLoader
+} from 'react-spinners';
 
 export const Spinner = () => {
     return (
-        <>
-            <img className='w-[200px] m-auto block' src="/spinner.gif" alt='loading..' />
-        </>
+        <div className="flex justify-center items-center ">
+            <RingLoader
+                color="white" size={55} />
+        </div>
     );
 };
