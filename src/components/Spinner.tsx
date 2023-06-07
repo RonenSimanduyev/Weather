@@ -4,7 +4,7 @@ import { RingLoader
 
 export const Spinner = () => {
     return (
-        <div className="flex justify-center items-center ">
+        <div className="flex justify-center items-center h-screen">
             <RingLoader
                 color="white" size={55} />
         </div>
